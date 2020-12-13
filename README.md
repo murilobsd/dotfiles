@@ -1,5 +1,11 @@
 # Dotfiles
 
+## install obsd
+
+```
+# pkg_add -l list
+```
+
 ## External packages
 
 Shell:
