@@ -34,6 +34,7 @@ spectrwm--
 spleen--
 sxiv--
 universal-ctags--iconv
+unzip--iconv
 vim--no_x11-python3
 xbanish--
 xclip--
