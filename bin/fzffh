@@ -1,0 +1,4 @@
+#!/bin/sh
+export r=$(git rev-parse --show-toplevel);
+export f=$(git ls-files $r|sk);
+tmux split-window vi $f
