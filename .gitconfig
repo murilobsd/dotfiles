@@ -1,0 +1,25 @@
+[user]
+	email = mbsd@m0x.ru
+	name = mbsd
+	signingkey = 33AB4DAE3FD71A70
+[gpg]
+	program = /usr/local/bin/gpg2
+[commit]
+	gpgsign = true
+[alias]
+	catchup = !git fetch upstream && git rebase upstream/master
+	diff-remote = diff origin..master
+	ff = pull --ff-only
+	fixup = rebase -i HEAD~5
+	graph = log --oneline --all --graph --decorate
+[push]
+	default = simple
+[diff]
+	compaction-heuristic = true
+	noprefix = true
+[http]
+	cookiefile = /home/msi/.gitcookies
+[rebase]
+	autostash = true
+[pull]
+	rebase = true
