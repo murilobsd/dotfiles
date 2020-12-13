@@ -1,5 +1,7 @@
 # Dotfiles
 
+## External packages
+
 Shell:
 - pass
 
@@ -16,3 +18,11 @@ Rust:
 - sk
 - exa?
 - alacritty?
+
+## Commands
+
+install packages:
+
+```
+pkg_add -l list
+```
