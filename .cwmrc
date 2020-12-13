@@ -1,4 +1,3 @@
-# automatically add new windows to the current group
 sticky yes
 fontname "Input Mono:size=8:style=Bold"
 unbind-key all
@@ -36,7 +35,9 @@ bind-key 4-g window-group
 
 bind-key 4-Right group-cycle
 bind-key 4-Left group-rcycle
-bind-key 4-s window-stick
+
+bind-key M-s  "bin/screenshot"
+bind-key MS-s  "bin/screenshot 200"
 
 bind-key 4-f window-fullscreen
 bind-key 4-m window-maximize
