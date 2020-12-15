@@ -1,0 +1,65 @@
+# set alias_file              = "~/.mutt/new_aliases"
+
+set certificate_file        = "~/.mutt-certificates"
+set header_cache            = "~/.mutt-cache"
+set history_file            = "~/.mutt-history"
+
+set auto_tag
+set edit_headers
+set editor                  = "vim +/^$/+1"
+set history                 = 100
+set mark_old                = "no"
+set mbox_type               = "maildir"
+set mime_forward            = "ask-yes"
+set move                    = "no"
+set nosig_dashes
+set pager_index_lines       = 9
+set pager_stop
+set print                   = "ask-yes"
+set save_history            = 1000
+set send_charset            = "us-ascii:iso-8859-15:utf8"
+set sort                    = "threads"
+set sort_aux                = "reverse-last-date"
+set strict_threads
+set use_envelope_from
+set use_from
+
+set crypt_use_gpgme         = "no"  # TODO
+set pgp_autoencrypt         = "yes"
+set pgp_autosign            = "yes"
+set pgp_create_traditional  = "no"  # ?!
+# set pgp_encrypt_self        = "yes" # !!
+set pgp_replyencrypt        = "yes"
+set pgp_use_gpg_agent       = "yes"
+set pgp_verify_sig          = "yes"
+
+set pgp_good_sign           = "^\\[GNUPG:\\] GOODSIG"
+
+set alias_format      = " %2f %t | %-24a | %r"
+set attribution       = "* %f [%[%Y-%m-%d %H:%M]]:"
+set date_format       = "%Y-%m-%d %H:%M:%S"
+set folder_format     = " %t %N | %F %-8.8u %-8.8g %8s %d | %f"
+set forward_format    = "[Fwd: %s]"
+set index_format      = " %[!%b %d] | %?M?%03M&   ? %Z | %-20.20L | %@info@%s"
+set pgp_entry_format  = " %t%f%2c | %-4a | %4l/0x%k | %u"
+
+hdr_order   Subject: From: Date: To: Cc:
+ignore      *
+unignore    Subject: From: Date: To: Cc:
+
+source "~/.mutt/priv/mutt/rc"
+
+source "~/.mutt/bindings"
+source "~/.mutt/colours"
+source "~/.mutt/hooks"
+
+# source "~/.mutt/mutt/aliases"
+# source "~/.mutt/mutt/alternates"
+# source "~/.mutt/mutt/lists"
+# source "~/.mutt/muttmuttboxes"
+# source "~/.mutt/mutt/new_aliases"
+
+source "~/.mutt/extra"
+source "~/.mutt/gpg"
+
+# vim: set tw=70 sw=2 sts=2 et fdm=marker :
