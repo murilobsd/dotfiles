@@ -1,5 +1,10 @@
 # Dotfiles
 
+## extensions
+
+- [ublock](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+- [vimmium](https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/)
+
 ## install obsd
 
 ```
