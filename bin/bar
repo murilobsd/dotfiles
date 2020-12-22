@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+
+# Define the clock
+Clock() {
+        DATETIME=$(date "+%d %b %H:%M")
+
+        echo -n "$DATETIME"
+}
+
+bat() {
+        echo -e "Bat: $(expr $(acpi -b | awk '{print $4}' | grep -Eo "[0-9]+" | paste -sd+ | bc) / 2)%"
+}
+# Print the clock
+
+while true; do
+        echo "$(bat) $(Clock)"
+        sleep 5
+done
