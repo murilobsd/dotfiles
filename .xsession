@@ -19,4 +19,5 @@ setxkbmap -layout 'us,br' -option \
 eval `dbus-launch --sh-syntax`
 
 xset -b
-exec cwm
+xsetroot -solid "#063441"
+exec spectrwm

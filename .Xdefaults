@@ -1,4 +1,11 @@
-! Common
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
 
 #define S_yellow        #b58900
 #define S_orange        #cb4b16
@@ -9,53 +16,29 @@
 #define S_cyan          #2aa198
 #define S_green         #859900
 
-! Dark
-
-! #define S_base03        #002b36
-! #define S_base02        #073642
-! #define S_base01        #586e75
-! #define S_base00        #657b83
-! #define S_base0         #839496
-! #define S_base1         #93a1a1
-! #define S_base2         #eee8d5
-! #define S_base3         #fdf6e3
-
-! Light
-
-#define S_base03        #fdf6e3
-#define S_base02        #eee8d5
-#define S_base01        #93a1a1
-#define S_base00        #839496
-#define S_base0         #657b83
-#define S_base1         #586e75
-#define S_base2         #073642
-#define S_base3         #002b36
-
 Xft.autohint  : 0
 Xft.lcdfilter : lcddefault
 Xft.hintstyle : hintslight
 Xft.hinting   : 1
 Xft.antialias : 1
 Xft.rgba      : rgb
-Xft.dpi:       120
-Xcursor.size:  48
-Xcursor.theme:  dmz
+Xft.dpi:       157
+XCursor.size:  48
+XCursor.theme:  dmz
 
 XIdle*position : sw
 XIdle*delay    : 1
 XIdle*timeout  : 300
 
-XTerm*faceName               : Input Mono:size=9
+XTerm*faceName               : Cousine:size=6.5:style=Regular
 XTerm*loginShell:true
-!XTerm*font                   : -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
 XTerm*borderWidth            : 0
-XTerm*internalBorder         : 10
+!XTerm*internalBorder         : 10
 XTerm*termName               : xterm-256color
 XTerm*vt100.metaSendsEscape  : true
 XTerm*v100.saveLines         : 10240
 XTerm*vt100.scrollBar        : false
 XTerm*vt100.bellIsUrgent     : true
-XTerm*allowBoldFonts         : false
 XTerm*scrollKey              : true
 XTerm*fullscreen             : never
 XTerm*cutToBeginningOfLine   : false
@@ -64,30 +47,59 @@ XTerm*charClass              : 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:
 XTerm*on2Clicks              : word
 XTerm*on3Clicks              : line
 
-!*background: #000
-!*foreground: #fff
+URxvt*termName: rxvt-unicode-256color
+URxvt*font: xft:Input Mono:size=7,xft:Noto Emoji:size=7
+URxvt*scrollBar:false
+URxvt*scrollBar_right:false
+URxvt*internalBorder:  10
 
-*background:              S_base03
-*foreground:              S_base0
-*fading:                  40
-*fadeColor:               S_base03
-*cursorColor:             S_base1
-*pointerColorBackground:  S_base01
-*pointerColorForeground:  S_base1
+termbar*faceName: Input Mono:style=Bold:size=6
+termbar*geometry: 1920x1+0+0
+termbar*internalBorder: 6
+termbar*saveLines: 0
+termbar*scrollBar: false
+termbar*title: termbar
+termbar*foreground: #000
+termbar*background: #fff
+!termbar*color1: qogir_red
+!termbar*color3: qogir_orange
 
-*color0:                  S_base02
-*color1:                  S_red
-*color2:                  S_green
-*color3:                  S_yellow
-*color4:                  S_blue
-*color5:                  S_magenta
-*color6:                  S_cyan
-*color7:                  S_base2
-*color9:                  S_orange
-*color8:                  S_base03
-*color10:                 S_base01
-*color11:                 S_base00
-*color12:                 S_base0
-*color13:                 S_violet
-*color14:                 S_base1
-*color15:                 S_base3
+
+*background:            S_base03
+*foreground:            S_base0
+*fadeColor:             S_base03
+*cursorColor:           S_base1
+*pointerColorBackground:S_base01
+*pointerColorForeground:S_base1
+
+!! black dark/light
+*color0:                S_base02
+*color8:                S_base03
+
+!! red dark/light
+*color1:                S_red
+*color9:                S_orange
+
+!! green dark/light
+*color2:                S_green
+*color10:               S_base01
+
+!! yellow dark/light
+*color3:                S_yellow
+*color11:               S_base00
+
+!! blue dark/light
+*color4:                S_blue
+*color12:               S_base0
+
+!! magenta dark/light
+*color5:                S_magenta
+*color13:               S_violet
+
+!! cyan dark/light
+*color6:                S_cyan
+*color14:               S_base1
+
+!! white dark/light
+*color7:                S_base2
+*color15:               S_base3

@@ -115,7 +115,7 @@ font:
     family: Input Mono
     style: Bold Italic
 
-  size: 6.5
+  size: 6
 
   offset:
     x: 0
